@@ -2,6 +2,7 @@ from src.bst import BinarySearchTree
 from src.dfs import dfs
 from src.bfs import bfs
 from src.dataset import generate_products
+from src.filters import filter_products
 import time
 
 
@@ -64,6 +65,18 @@ def main():
         print(node.data)
     else:
         print("❌ Produto não encontrado")
+    
+
+    print("\n🔍 Filtrando: Categoria 'Eletrônicos' com preço até R$ 500.00")
+    cheap_electronics = filter_products(
+        bst.root, 
+        category="Eletrônicos", 
+        max_price=500.0
+    )
+
+    print(f"📊 Encontrados: {len(cheap_electronics)} produtos")
+    for p in cheap_electronics[:3]: # Mostra os 3 primeiros resultados
+        print(f" - {p['name']}: R$ {p['price']} (Rating: {p['rating']})")
 
 
 if __name__ == "__main__":
