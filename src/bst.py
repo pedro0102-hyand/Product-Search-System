@@ -1,4 +1,4 @@
-from node import Node
+from src.node import Node
 
 class BynarySearchTree:
 
@@ -22,7 +22,6 @@ class BynarySearchTree:
         return None
     
     def search(self, key):
-
         return self._search_recursive(self.root, key)
     
     def _search_recursive(self, node, key):
