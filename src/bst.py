@@ -1,6 +1,6 @@
 from src.node import Node
 
-class BynarySearchTree:
+class BinarySearchTree:
 
     def __init__(self):
         self.root = None # Árvore está inicialmente vazia quando criada
