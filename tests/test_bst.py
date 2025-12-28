@@ -38,3 +38,18 @@ def test_root_assignment():
     bst.insert(1, "X")
     assert bst.root is not None
     assert bst.root.key == 1
+
+def test_delete_node():
+    bst = BinarySearchTree()
+    bst.insert(10, "Raiz")
+    bst.insert(5, "Esquerda")
+    bst.insert(15, "Direita")
+    
+    # Remove um nó folha
+    bst.delete(15)
+    assert bst.search(15) is None
+    
+    # Remove o nó raiz (nó com filho)
+    bst.delete(10)
+    assert bst.search(10) is None
+    assert bst.root.key == 5
