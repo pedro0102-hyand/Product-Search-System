@@ -13,23 +13,23 @@ class BinarySearchTree:
         if node is None:
             return Node(key, data)
         
-        if key < node.key :
+        if key < node.key:
             node.left = self._insert_recursive(node.left, key, data)
         
-        elif key > node.key :
+        elif key > node.key:
             node.right = self._insert_recursive(node.right, key, data)
         
-        return None
+        return node  # CORREÇÃO: retorna o nó em vez de None
     
     def search(self, key):
         return self._search_recursive(self.root, key)
     
     def _search_recursive(self, node, key):
 
-        if node is None or node.key == key : # retorna caso o vertice encontrado seja o escolhido
+        if node is None or node.key == key: # retorna caso o vertice encontrado seja o escolhido
             return node
         
-        if key < node.key : #vasculhar a arvore buscando o valor de acordo com o tamanho da chave
+        if key < node.key: #vasculhar a arvore buscando o valor de acordo com o tamanho da chave
             return self._search_recursive(node.left, key)
         
         return self._search_recursive(node.right, key)
