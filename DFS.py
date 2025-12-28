@@ -5,6 +5,7 @@ def dfs(root):
 
     while stack :
 
+        # Remove do topo da Pilha e adiciona na lista de visitados
         current = stack.pop()
         visited.append(current.key)
 
