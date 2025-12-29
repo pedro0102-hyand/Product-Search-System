@@ -1,0 +1,48 @@
+// BST do Sistema de Produtos
+digraph {
+	node [color=lightblue fontname=Arial shape=circle style=filled]
+	95 [label="ID: 95
+Eletrônicos"]
+	95 -> 60
+	60 [label="ID: 60
+Casa"]
+	60 -> 21
+	21 [label="ID: 21
+Esporte"]
+	21 -> 9
+	9 [label="ID: 9
+Esporte"]
+	21 -> 42
+	42 [label="ID: 42
+Casa"]
+	60 -> 94
+	94 [label="ID: 94
+Roupas"]
+	94 -> 90
+	90 [label="ID: 90
+Alimentos"]
+	90 -> 80
+	80 [label="ID: 80
+Casa"]
+	80 -> 79
+	79 [label="ID: 79
+Alimentos"]
+	95 -> 113
+	113 [label="ID: 113
+Esporte"]
+	113 -> 106
+	106 [label="ID: 106
+Eletrônicos"]
+	106 -> 104
+	104 [label="ID: 104
+Alimentos"]
+	106 -> 109
+	109 [label="ID: 109
+Livros"]
+	109 -> 107
+	107 [label="ID: 107
+Livros"]
+	113 -> 135
+	135 [label="ID: 135
+Eletrônicos"]
+}
