@@ -10,7 +10,7 @@ def main():
     # =========================
     # Configuração do experimento
     # =========================
-    DATASET_SIZE = 5000   # aumente para 10000, 20000, etc.
+    DATASET_SIZE = 15  # aumente para 10000, 20000, etc.
 
     print(f"📦 Gerando dataset com {DATASET_SIZE} produtos...")
     products = generate_products(DATASET_SIZE)
