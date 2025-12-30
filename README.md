@@ -71,39 +71,8 @@ Python 3.8+
 pip (gerenciador de pacotes Python)
 ```
 
-
-
 # Instale as dependências
 pip install matplotlib pytest
-```
-
-### Estrutura de Diretórios
-
-```
-projeto/
-├── src/
-│   ├── __init__.py
-│   ├── node.py           # Nó para BST
-│   ├── bst.py            # Implementação BST
-│   ├── avl_node.py       # Nó para AVL
-│   ├── avl_tree.py       # Implementação AVL
-│   ├── dfs.py            # Travessia DFS
-│   ├── bfs.py            # Travessia BFS
-│   ├── filters.py        # Sistema de filtros
-│   └── dataset.py        # Geração de dados
-├── tests/
-│   ├── test_bst.py
-│   ├── test_avl.py
-│   ├── test_dfs.py
-│   ├── test_bfs.py
-│   └── test_filters.py
-├── aux/
-│   ├── main_comparison.py      # Comparação BST vs AVL
-│   ├── visualize_tree.py       # Visualização BST
-│   └── visualize_avl.py        # Visualização AVL
-├── main.py               # Exemplo de uso
-├── pytest.ini
-└── README.md
 ```
 
 ## 💻 Uso
